@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHive - Premium E-commerce Store</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+   
+    <header id="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-hexagon"></i>
+                TechHive
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="header-actions">
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+   
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Welcome to <span class="gradient-text">TechHive</span>
+            </h1>
+            <p class="hero-subtitle">
+                Discover cutting-edge technology products with unbeatable quality, innovation, and style
+            </p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">
+                    <span>Shop Now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <span>Learn More</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   
+    <main>
+        
+        <section id="products" class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Products</h2>
+                    <p class="section-subtitle">
+                        Discover our handpicked selection of premium tech products designed to enhance your digital lifestyle
+                    </p>
+                </div>
+                <div class="products-grid" id="productsGrid">
+                  <!--the product details is in the js file :)-->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About TechHive</h2>
+                        <p class="about-description">
+                            At TechHive, we're passionate about bringing you the latest and greatest in technology and lifestyle products. Founded in 2020, we've been committed to providing our customers with high-quality products at competitive prices, backed by exceptional customer service.
+                        </p>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <h3>Fast Shipping</h3>
+                                <p>Free shipping on orders over $50</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3>Secure Payment</h3>
+                                <p>Your payment information is always safe</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h3>24/7 Support</h3>
+                                <p>We're here to help whenever you need us</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="/img/logo.png" alt="TechHive Workspace" class="about-img">
+                            <div class="image-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact mee -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">
+                        Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                    </p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Address</h3>
+                                <p>1st Settlement, New Cairo<br>Tech City</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+20 1061186867</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>info@techhive.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Business Hours</h3>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat - Sun: 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-total" id="cartTotal" style="display: none;">
+            <div class="total-amount">Total: $<span id="totalAmount">0.00</span></div>
+            <button class="btn btn-success btn-full" onclick="checkout()">
+                <span>Proceed to Checkout</span>
+                <i class="fas fa-credit-card"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="toggleCart()"></div>
+
+  
+    <div class="modal-overlay" id="receiptModal">
+        <div class="modal-content receipt-modal">
+            <div class="modal-header">
+                <h2><i class="fas fa-receipt"></i> Order Receipt</h2>
+                <button class="close-modal" onclick="closeReceiptModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="receipt-header">
+                    <h3>TechHive</h3>
+                    <p>Thank you for your purchase!</p>
+                    <div class="order-details">
+                        <div class="order-number">Order #: <span id="orderNumber"></span></div>
+                        <div class="order-date">Date: <span id="orderDate"></span></div>
+                    </div>
+                </div>
+                <div class="receipt-items" id="receiptItems">
+                    
+                </div>
+                <div class="receipt-total">
+                    <div class="total-row">
+                        <span>Subtotal:</span>
+                        <span id="receiptSubtotal">$0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Tax (8.5%):</span>
+                        <span id="receiptTax">$0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Shipping:</span>
+                        <span id="receiptShipping">Free</span>
+                    </div>
+                    <div class="total-row final-total">
+                        <span>Total:</span>
+                        <span id="receiptTotal">$0.00</span>
+                    </div>
+                </div>
+                <div class="receipt-footer">
+                    <p>A confirmation email has been sent to your email address.</p>
+                    <button class="btn btn-secondary" onclick="printReceipt()">
+                        <i class="fas fa-print"></i>
+                        <span>Print Receipt</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
